@@ -16,6 +16,6 @@ jobs:
                 username: ${{ secrets.DOCKER_USERNAME }}
                 password: ${{ secrets.DOCKER_PASSWORD }}
             - name: Build Docker image
-              run: docker build -t Avotrajoda/docker_with_cloud:latest .
+              run: docker build -t andriamaharavo/docker_with_cloud:latest .
             - name: Push Docker image
-              run: docker push Avotrajoda/docker_with_cloud:latest
+              run: docker push andriamaharavo/docker_with_cloud:latest
