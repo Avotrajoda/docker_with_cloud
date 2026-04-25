@@ -26,6 +26,6 @@ jobs:
         - name: pull image
           run: docker pull andriamaharavo/docker_with_cloud:latest
         - name: stop old container
-          run: docker stop docker_with_cloud || true
+          run: docker rm docker_with_cloud || true
         - name: run new container
           run: docker run -d -p 8080:80 --name docker_with_cloud andriamaharavo/docker_with_cloud
